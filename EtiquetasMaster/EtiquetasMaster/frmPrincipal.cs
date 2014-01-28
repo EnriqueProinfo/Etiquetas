@@ -21,11 +21,14 @@ namespace EtiquetasMaster
 
         private void frmPrincipal_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dsAprietesUnificados.Aprietes_unificados' table. You can move, or remove it, as needed.
+            this.aprietes_unificadosTableAdapter.Fill(this.dsAprietesUnificados.Aprietes_unificados);
             this.ref_mahleTableAdapter.Fill(this.dsEtiMahle.ref_mahle);
             this.etiretfmTableAdapter.Fill(this.dsEtiRetFM.etiretfm);
             this.etitorfmpTableAdapter.Fill(this.dsEtiTorFM.etitorfmp);
             this.etijuefmpgTableAdapter.Fill(this.dsEtiJueFM.etijuefmpg);
             this.etiquetasNoEnCatalogoTableAdapter.Fill(this.dsEtiquetasNoEnCatalogo.EtiquetasNoEnCatalogo);
+            this.aprietes_unificadosTableAdapter.Fill(this.dsAprietesUnificados.Aprietes_unificados);
         }
 
         private void btnCopiar_Click(object sender, EventArgs e)
@@ -185,6 +188,11 @@ namespace EtiquetasMaster
         }
 
         private void gcEtiNoEnCata_EmbeddedNavigator_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
         {
 
         }

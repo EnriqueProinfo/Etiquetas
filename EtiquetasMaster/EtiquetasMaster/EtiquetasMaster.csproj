@@ -59,6 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos.cs" />
+    <Compile Include="dsAprietesUnificados.cs">
+      <DependentUpon>dsAprietesUnificados.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsAprietesUnificados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAprietesUnificados.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dsEtiqJueFM.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,6 +116,17 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="dsAprietesUnificados.xsc">
+      <DependentUpon>dsAprietesUnificados.xsd</DependentUpon>
+    </None>
+    <None Include="dsAprietesUnificados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAprietesUnificados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsAprietesUnificados.xss">
+      <DependentUpon>dsAprietesUnificados.xsd</DependentUpon>
+    </None>
     <None Include="dsEtiqJueFM.xsc">
       <DependentUpon>dsEtiqJueFM.xsd</DependentUpon>
     </None>
